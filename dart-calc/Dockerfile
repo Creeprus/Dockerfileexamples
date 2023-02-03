@@ -1,0 +1,7 @@
+FROM dart:stable as build
+
+WORKDIR /dart-calc
+
+COPY . /dart-calc
+
+CMD ["dart","calc.dart"]
